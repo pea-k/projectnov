@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NeuroSync AI-Powered Robotic Exoskeleton</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">NeuroSync</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>NeuroSync AI-Powered Robotic Exoskeleton</h1>
+            <p>Revolutionizing human potential through AI and robotics.</p>
+            <a href="#about" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About NeuroSync</h2>
+        <p>
+            Our mission is to enhance human capabilities through neural-driven robotics. NeuroSync integrates seamlessly with the human nervous system, providing adaptability and enhanced physical capabilities.
+        </p>
+    </section>
+
+    <section id="features">
+        <h2>Core Functions</h2>
+        <div class="features-grid">
+            <!-- Feature 1 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Capture Neural Signals</h3>
+                <p class="feature-description">Collect electrical impulses from the brain to enable seamless communication with the exoskeleton.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Filter Noise</h3>
+                <p class="feature-description">Eliminate background neural activity to focus on intentional commands.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Interpret Intent</h3>
+                <p class="feature-description">Analyze neural patterns to determine user intentions.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Generate Motor Commands</h3>
+                <p class="feature-description">Convert neural signals into precise mechanical actions.</p>
+            </div>
+            <!-- Feature 5 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Adaptive Learning</h3>
+                <p class="feature-description">Continuously improve responsiveness through machine learning algorithms.</p>
+            </div>
+            <!-- Feature 6 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Safety Protocols</h3>
+                <p class="feature-description">Implement fail-safes to prevent accidents and ensure user safety.</p>
+            </div>
+            <!-- Feature 7 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Stabilize Motion</h3>
+                <p class="feature-description">Prevents sudden jerks or instability for smoother movements.</p>
+            </div>
+            <!-- Feature 8 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Energy Efficiency</h3>
+                <p class="feature-description">Optimize power consumption for extended use.</p>
+            </div>
+            <!-- Feature 9 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Real-Time Feedback</h3>
+                <p class="feature-description">Provide immediate sensory feedback to the user.</p>
+            </div>
+            <!-- Feature 10 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Customizable Settings</h3>
+                <p class="feature-description">Adjust functionality to suit individual user needs.</p>
+            </div>
+            <!-- Feature 11 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Wireless Connectivity</h3>
+                <p class="feature-description">Enable remote updates and diagnostics.</p>
+            </div>
+            <!-- Feature 12 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Durable Design</h3>
+                <p class="feature-description">Built with high-strength materials for longevity.</p>
+            </div>
+            <!-- Feature 13 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Lightweight Structure</h3>
+                <p class="feature-description">Engineered to reduce fatigue during prolonged use.</p>
+            </div>
+            <!-- Feature 14 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>Environmental Sensors</h3>
+                <p class="feature-description">Detect external conditions to adapt performance accordingly.</p>
+            </div>
+            <!-- Feature 15 -->
+            <div class="feature-item" onclick="toggleFeatureDetail(this)">
+                <h3>User-Friendly Interface</h3>
+                <p class="feature-description">Simple controls for ease of operation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="validateForm(event)">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <span class="error-message" id="messageError"></span>
+            </div>
+            <button type="submit">Submit</button>
+            <span class="success-message" id="formSuccess"></span>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 NeuroSync. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
